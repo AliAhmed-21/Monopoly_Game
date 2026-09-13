@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="800"
+   height="421"
+   viewBox="0 0 800 421"
+   id="svg2486"
+   xml:space="preserve">
+<defs
+   id="defs3">
+	
+	
+		
+</defs>
+
+<rect
+   width="800.0058"
+   height="421.0101"
+   x="0"
+   y="-0.014781935"
+   id="rect2395"
+   style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:15;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><path
+   d="M 0,0 L 383.9,0 C 383.9,10.8 383.9,21.7 383.9,32.5 C 383.9,36.2 383.9,39.9 384.001,43.6 C 256.001,43.6 128.001,43.6 0.001,43.6 L 0.001,0 L 0,0 z"
+   id="path2488"
+   style="fill:#0037b8;fill-opacity:1" />
+<path
+   d="M 383.9,0 L 800,0 L 800,32.3 C 753.699,32.7 707.3,32.4 661,32.5 C 568.699,32.5 476.3,32.5 383.899,32.5 C 383.9,21.7 383.9,10.8 383.9,0 z"
+   id="path2490"
+   style="fill:#b32032;fill-opacity:1" />
+<path
+   d="M 383.9,64.7 C 522.6,64.7 661.3,64.7 800.001,64.7 L 800.001,97.2 C 661.301,97.2 522.601,97.2 383.9,97.2 C 383.9,86.4 383.9,75.6 383.9,64.7 z"
+   id="path2496"
+   style="fill:#b32032;fill-opacity:1" />
+
+
+
+
+
+
+<path
+   d="M 384,129.4 C 522.6,129.4 661.3,129.4 800,129.4 L 800,162 C 661.3,162 522.6,162 383.899,162 C 383.9,151.1 383.9,140.3 384,129.4 z"
+   id="path2510"
+   style="fill:#b32032;fill-opacity:1" />
+
+<path
+   d="M 0,183.1 C 128,183.1 256,183.1 383.899,183.1 C 383.899,186.8 383.899,190.5 383.899,194.2 C 384,205.1 383.799,216 384.099,226.9 C 256,227.2 128,226.9 0,227 L 0,183.1 z"
+   id="path2514"
+   style="fill:#0037b8;fill-opacity:1" />
+<path
+   d="M 383.9,194.2 C 522.6,194.2 661.3,194.2 800.001,194.2 L 800.001,226.8 C 685.001,226.8 570.001,226.8 455.001,226.8 C 431.301,226.8 407.7,226.6 384.101,226.901 C 383.8,216 384,205.1 383.9,194.2 z"
+   id="path2516"
+   style="fill:#b32032;fill-opacity:1" />
+<path
+   d="M 0,259 C 266.7,259 533.3,259 800,259 L 800,291.6 C 533.3,291.6 266.7,291.6 0,291.6 L 0,259 z"
+   id="path2520"
+   style="fill:#b32032;fill-opacity:1" />
+<path
+   d="M 0,323.8 C 266.7,323.8 533.3,323.8 800,323.8 L 800,356.3 C 533.3,356.3 266.7,356.3 0,356.3 L 0,323.8 z"
+   id="path2524"
+   style="fill:#b32032;fill-opacity:1" />
+<path
+   d="M 0,388.6 C 16.3,388.3 32.6,388.6 49,388.5 C 299.3,388.5 549.699,388.5 800,388.5 L 800,421 L 0,421 L 0,388.6 z"
+   id="path2528"
+   style="fill:#b32032;fill-opacity:1" />
+<g
+   transform="matrix(2.4,0,0,2.4,135.38718,-252.29882)"
+   id="use15">
+</g>
+<g
+   transform="matrix(-2.4,0,0,-2.4,135.38718,-252.29882)"
+   id="use17">
+</g>
+<g
+   transform="matrix(1,0,0,1.0231333,-0.3474974,3.1004576)"
+   id="g25">
+	<polygon
+   points="191.75,64.401 149.23,138.049 234.269,138.049 191.75,64.401 "
+   transform="translate(0,-3.42091)"
+   id="triangle"
+   style="fill-opacity:0;stroke:#0037b8;stroke-width:10" />
+</g>
+<g
+   transform="matrix(-1,0,0,1,317.843,7.5039546)"
+   id="g28">
+	<polygon
+   points="191.75,162.598 234.269,88.951 149.23,88.951 191.75,162.598 "
+   transform="translate(-64.756,-5.3539546)"
+   id="triangle_1_"
+   style="fill-opacity:0;stroke:#0037b8;stroke-width:10" />
+</g>
+</svg>

@@ -1,0 +1,10 @@
+{
+  "name": "@monopoly/shared",
+  "version": "0.1.0",
+  "private": true,
+  "types": "types.ts",
+  "main": "types.ts",
+  "exports": {
+    ".": "./types.ts"
+  }
+}

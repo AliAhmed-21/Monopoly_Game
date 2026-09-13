@@ -1,0 +1,8 @@
+{
+  "enabledPlugins": {
+    "ui-ux-pro-max@ui-ux-pro-max-skill": true,
+    "motion-framer@claude-design-skillstack": true,
+    "modern-web-design@claude-design-skillstack": true,
+    "meta-skills@claude-design-skillstack": true
+  }
+}

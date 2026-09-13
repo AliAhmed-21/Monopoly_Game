@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-night text-slate-100 antialiased;
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  min-height: 100dvh;
+  /* Minimalist backdrop: a single soft violet glow up top over a deep
+     charcoal falloff — quiet enough that the cards + tokens carry the color. */
+  background-color: #0e0d15;
+  background-image:
+    radial-gradient(1100px 640px at 50% -12%, rgba(124, 107, 246, 0.12), transparent 62%),
+    radial-gradient(circle at 50% 42%, #16141f 0%, #0b0a12 72%);
+  background-attachment: fixed;
+}
+
+/* Display face helper */
+.font-display {
+  font-family: var(--font-display), ui-rounded, system-ui, sans-serif;
+}
+
+/* ── Focus visibility (accessibility floor) ── */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid #7c6bf6;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Thin, themed scrollbars for chat / log / lists */
+.scroll-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.4) transparent;
+}
+.scroll-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  @apply rounded-full;
+  background: rgba(148, 163, 184, 0.35);
+}
+.scroll-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.6);
+}
+
+/* Floating "stall" panel — the shared card language. */
+.stall-card {
+  @apply rounded-2xl border border-white/10 bg-stall/80 shadow-stall backdrop-blur-sm;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.04), transparent 40%);
+}
+
+/* Clean board frame — a subtle raised bezel that lifts the board off the field. */
+.board-frame {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.015) 42%, rgba(0, 0, 0, 0.3));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 20px 50px -24px rgba(0, 0, 0, 0.85);
+}
+
+/* Make the board a size container so tile contents can scale with the board's
+   own width (via `cqw` units + `em`), staying proportional from wide desktop
+   down to a narrow phone instead of relying on a couple of fixed breakpoints. */
+.board-surface {
+  container-type: inline-size;
+}
+/* Base type size for every tile: ~1.6% of the board width, clamped so it never
+   gets unreadably small on phones or oversized on desktop. Tile internals are
+   sized in `em`, so they all track this one value. A slightly higher floor keeps
+   names/prices legible on narrow phone boards, and the ceiling is set so a tile
+   reads dense — name and price close to the card's edges — rather than leaving
+   the big empty middle a smaller base would. */
+.tile-scale {
+  font-size: clamp(4.5px, 1.6cqw, 13px);
+}
+
+/* Each tile is its own size container, so the sideways tiles on the left and
+   right columns can lay a content plane out against the tile's SWAPPED axes
+   (width = tile height, height = tile width) and then rotate it into place.
+   That gives the side columns their vertical text with no separate layout.
+   Note this only affects `cq*` units used INSIDE a tile — `.tile-scale` sits
+   above it and still measures against the board. */
+.tile-face {
+  container-type: size;
+}
+.tile-plane {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100cqh;
+  height: 100cqw;
+  transform-origin: center;
+}
+
+/* Tabular numerics everywhere the numeric face is used. */
+.font-numeric {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Reduced motion: keep feedback, drop the long/looping motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
